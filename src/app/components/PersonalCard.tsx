@@ -6,20 +6,22 @@ import { IoLocationOutline } from 'react-icons/io5'
 import { MdPhoneAndroid } from 'react-icons/md'
 
 const PersonalCard = () => {
+    
   return (
-    <div className="w-[280px] max-w-[280px] bg-grey-bg px-5 border border-ligthwhite rounded-2xl sticky top-[40px] h-fit">   
+    <div className="flex flex-row flex-wrap gap-5 items-center md:flex-col md:w-[280px] md:max-w-[280px] bg-grey-bg px-5 border border-ligthwhite rounded-2xl md:sticky top-[40px] h-fit">   
 
-        <div className='flex flex-col items-center'>            
+        <div className='flex flex-col flex-1 items-center'>            
             <div className='mt-15 mb-2 bg-ligthgrey-bg flex justify-center items-center w-[150px] h-[150px] rounded-lg '>
               😎
             </div>
-            <div className='text-2xl font-bold text-white-text mb-2'>Nathan Buchin</div>
-            <div className='text-xs bg-ligthwhite mt-1 rounded py-[4px] px-[8px] text-white-text'>Software Engineer</div>            
+            <div className='text-xl md:text-2xl font-bold text-white-text md:mb-2'>Nathan Buchin</div>
+            <div className='text-[10px] md:text-xs bg-ligthwhite mt-1 rounded py-[4px] px-[8px] text-white-text'>Software Engineer</div>            
         </div>     
 
-        <div className="line-separator my-10 h-[1px] rounded w-full bg-ligthwhite"></div>
+        
+        <div className="my-10 md:w-full md:h-[1px] rounded bg-ligthwhite"></div>
 
-        <div className="general-infos flex flex-col gap-5">
+        <div className="mt-10 md:mt-0 flex flex-col justity-center flex-1 gap-5">
           
           <div className='flex items-center gap-4'> 
             <CiMail className='text-primary text-xl'/>
@@ -53,7 +55,7 @@ const PersonalCard = () => {
         </div>
 
 
-        <div className="socials text-grey-text text-xl my-5 mx-auto py-2 px-5 w-max rounded flex justify-center gap-3">
+        <div className="  text-grey-text text-xl my-5 mx-auto py-2 px-5 w-full rounded flex justify-center gap-3">
           <a href="https://github.com/Nathanb-ecam">
             <FaGithub/>
           </a>

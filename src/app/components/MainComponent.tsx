@@ -14,10 +14,10 @@ const MainComponent = () => {
         <Navbar selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
         <section className='w-full'>
           <div className="title mt-[20px]">
-            <div className='text-3xl font-bold text-white-text'>{selectedTab}</div>
+            <div className='text-xl md:text-3xl font-bold text-white-text'>{selectedTab}</div>
             <div className="line bg-primary mt-2 mb-5 rounded w-[50px] h-[5px]"></div>
           </div>
-          <div className="content overflow-scroll">
+          <div className="content overflow-scroll pb-10">
             {selectedTab === 'About me' && <AboutMe />}            
             {selectedTab === 'Skills' && <Skills />}
             {selectedTab === 'Portfolio' && <Portfolio />}

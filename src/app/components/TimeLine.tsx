@@ -19,19 +19,19 @@ const TimeLine = ({title, timelineItems, liCSS = {marginBottom:'20px'}} : Props)
     return (
     <div className='mt-5'>
         <h3 className='text-white font-bold text-md'>{title}</h3>
-        <ul className='ml-5 mt-3 relative border-l border-gray-5^00'>            
+        <ul className='ml-5 mt-3 relative border-l border-gray-500'>            
         
-            {timelineItems.map((item, index)=>(
+            {timelineItems?.map((item, index)=>(
                 <li key={index} className="ml-4" style={liCSS}>
                     <div className='absolute mt-1.5 -left-1.5 bg-primary rounded-full w-3 h-3'></div>
-                    <time className='text-primary text-sm'>{item.period}</time>
-                    <h3 className='text-white-text font-semibold text-md'>{item.title}</h3>
+                    <time className='text-primary text-xs md:text-sm'>{item.period}</time>
+                    <h3 className='text-white-text font-semibold mb-1 md:mb-0 text-sm md:text-md'>{item.title}</h3>
                     {item.quote && 
                         <blockquote className='italic font-semibold text-gray-900'>
-                            <p className='text-gray-400 text-base'>&quot;{item.quote}&quot;</p>
+                            <p className='text-gray-400 text-xs md:text-md text-base'>&quot;{item.quote}&quot;</p>
                         </blockquote>
                     }
-                    <p className='text-gray-400 text-base'>{item.description}</p>
+                    <p className='text-gray-400 text-xs md:text-md text-base'>{item.description}</p>
                     
                 </li>
             ))}

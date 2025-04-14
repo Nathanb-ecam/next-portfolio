@@ -11,7 +11,7 @@ const AboutMe = () => {
     },
     {
         title: 'OnePoint internship - software development',
-        period: 'January - June 2024',        
+        period: 'March - April 2021',        
         description: `IoT extension to the "OneRoom" project, built by MIC Mons to showcase AI's power in a playful manner.`
     },
   ]
@@ -31,7 +31,7 @@ const AboutMe = () => {
   
     return (
     <>
-        <div className='text-grey-text text-md'>           
+        <div className='text-grey-text text-sm md:text-md'>           
             As a recent graduate in Industrial Engineering with a focus on Computer Science, I am exploring opportunities to expand my skill set and deepen my knowledge. I believe in continuous learning and strive to stay updated with the latest technologies and industry trends. I am excited to collaborate with others and contribute to innovative projects.
         </div>
         
