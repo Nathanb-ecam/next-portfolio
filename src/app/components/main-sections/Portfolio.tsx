@@ -11,7 +11,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Makassar management",
-      imagePath:"images/projects/makassar_management/orders.png",
+      imagePath:"/images/projects/makassar_management/orders.png",
       description: "Management SAAS for a bags business. Allows to manage clients, products, orders and their invoices.",
       technologies: ["HTML","CSS","React.js","Ktor", "MongoDB","JWT"],
       githubLink: "https://github.com/Nathanb-ecam/makassar-management-frontend.git",
@@ -19,7 +19,7 @@ const Portfolio = () => {
     },
     {
       title: "AI Gallery",
-      imagePath:"images/projects/AI_gallery/clusters.png",
+      imagePath:"/images/projects/AI_gallery/clusters.png",
       description: "Gallery app that stores images and allows to perform detection (humans/animals) and face clustering.",
       technologies: ["HTML","CSS","React.js","Python", "Django","PostgreSQL","yolov3","DBSCAN"],
       githubLink: "https://github.com/Nathanb-ecam/AI_smart_gallery.git",
@@ -27,7 +27,7 @@ const Portfolio = () => {
     },
     {
       title: "IoT device configurator",
-      imagePath:"images/projects/IoT_thesis/android_app.png",
+      imagePath:"/images/projects/IoT_thesis/android_app.png",
       description: "An android app handling the configuration of IoT devices, by passing credentials through Bluetooth Low Energy.",
       technologies: ["Android Studio","Jetpack compose","BLE"],
       githubLink: "https://github.com/Nathanb-ecam/netty-mqtt-loadtester.git",
@@ -35,7 +35,7 @@ const Portfolio = () => {
     },
     {
       title: "IoT loadtest/monitoring",
-      imagePath:"images/projects/IoT_thesis/grafana.png",
+      imagePath:"/images/projects/IoT_thesis/grafana.png",
       description: "GCP deployment of the IoT infrastructure, with monitoring of services and MQTT broker. Implementation of a loadtesting microservice to simulate a fleet of devices.",
       technologies: ["GCP","GKE","Kubernetes","Prometheus", "Grafana","Kotlin","Ktor","MQTT","EMQX","Netty"],
       githubLink: "https://github.com/Nathanb-ecam/netty-mqtt-loadtester.git",
@@ -43,7 +43,7 @@ const Portfolio = () => {
     },
     {
       title: "Fast food order app",
-      imagePath:"images/projects/android_order_app/android_restaurant.png",
+      imagePath:"/images/projects/android_order_app/android_restaurant.png",
       description: "An android app that allows users to place orders, by selecting menus and extras.",
       technologies: ["Android Studio","Jetpack compose","BLE","Coil"],
       githubLink: "https://github.com/Nathanb-ecam/android_restaurant_order.git",
@@ -51,7 +51,7 @@ const Portfolio = () => {
     },
     {
       title: "IoT telemetry",
-      imagePath:"images/projects/IoT_telemetry/iot_telemetry_ui.png",
+      imagePath:"/images/projects/IoT_telemetry/iot_telemetry_ui.png",
       description: "An IoT monitoring solution displaying real time humidity/temperature sensors data.",
       technologies: ["MQTT", "C/C++", "Arduino","LoraWan","HTML","CSS","Node.js","Express", "socket.io","JWT"],
       githubLink: "https://github.com/Nathanb-ecam/IoT_telemetry_app.git",
