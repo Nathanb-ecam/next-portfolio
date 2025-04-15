@@ -14,7 +14,7 @@ const PersonalCard = () => {
         <div className='flex flex-col flex-1 items-center'>            
             <div className='relative mt-15 mb-2 bg-ligthgrey-bg flex justify-center items-center w-[150px] h-[150px] rounded-lg '>              
               <Image
-                src="images/me.jpeg"                
+                src="/images/me.jpeg"                
                 alt="cover picture"
                 fill
                 className='object-cover rounded-lg'
