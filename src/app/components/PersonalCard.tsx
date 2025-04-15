@@ -12,9 +12,9 @@ const PersonalCard = () => {
     <div className="flex flex-row flex-wrap gap-5 items-center md:flex-col md:w-[280px] md:max-w-[280px] bg-grey-bg px-5 border border-ligthwhite rounded-2xl md:sticky top-[40px] h-fit">   
 
         <div className='flex flex-col flex-1 items-center'>            
-            <div className='relative mt-15 mb-2 bg-ligthgrey-bg flex justify-center items-center w-[150px] h-[150px] rounded-lg '>              
+            <div className='relative mt-15 mb-2 bg-ligthgrey-bg flex justify-center items-center w-[200px] h-[200px] rounded-lg '>              
               <Image
-                src="/images/me.jpeg"                
+                src="images/me.jpeg"                
                 alt="cover picture"
                 fill
                 className='object-cover rounded-lg'
