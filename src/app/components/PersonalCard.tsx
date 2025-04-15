@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React from 'react'
 import { CiCalendarDate, CiMail } from 'react-icons/ci'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -11,8 +12,13 @@ const PersonalCard = () => {
     <div className="flex flex-row flex-wrap gap-5 items-center md:flex-col md:w-[280px] md:max-w-[280px] bg-grey-bg px-5 border border-ligthwhite rounded-2xl md:sticky top-[40px] h-fit">   
 
         <div className='flex flex-col flex-1 items-center'>            
-            <div className='mt-15 mb-2 bg-ligthgrey-bg flex justify-center items-center w-[150px] h-[150px] rounded-lg '>
-              😎
+            <div className='relative mt-15 mb-2 bg-ligthgrey-bg flex justify-center items-center w-[150px] h-[150px] rounded-lg '>              
+              <Image
+                src="images/me.jpeg"                
+                alt="cover picture"
+                fill
+                className='object-cover rounded-lg'
+              />
             </div>
             <div className='text-xl md:text-2xl font-bold text-white-text md:mb-2'>Nathan Buchin</div>
             <div className='text-[10px] md:text-xs bg-ligthwhite mt-1 rounded py-[4px] px-[8px] text-white-text'>Software Engineer</div>            

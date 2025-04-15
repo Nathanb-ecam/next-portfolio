@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ProjectCard, { Project, ProjectTypes } from '../ProjectCard';
 
 const Portfolio = () => {
-  const filters = ['All','Web Development','Mobile dev', 'Cloud & infrastructure']
+  const filters = ['All','Web Development','Mobile dev', 'IOT','Cloud & infrastructure']
   const [selectedFilter, setSelectedFilter] = useState('All');  
 
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
@@ -31,7 +31,7 @@ const Portfolio = () => {
       description: "An android app handling the configuration of IoT devices, by passing credentials through Bluetooth Low Energy.",
       technologies: ["Android Studio","Jetpack compose","BLE"],
       githubLink: "https://github.com/Nathanb-ecam/netty-mqtt-loadtester.git",
-      categories:[ProjectTypes.CLOUD_AND_INFRA]    
+      categories:[ProjectTypes.MOBILE, ProjectTypes.IOT]    
     },
     {
       title: "IoT loadtest/monitoring",
@@ -39,7 +39,7 @@ const Portfolio = () => {
       description: "GCP deployment of the IoT infrastructure, with monitoring of services and MQTT broker. Implementation of a loadtesting microservice to simulate a fleet of devices.",
       technologies: ["GCP","GKE","Kubernetes","Prometheus", "Grafana","Kotlin","Ktor","MQTT","EMQX","Netty"],
       githubLink: "https://github.com/Nathanb-ecam/netty-mqtt-loadtester.git",
-      categories:[ProjectTypes.CLOUD_AND_INFRA]    
+      categories:[ProjectTypes.CLOUD_AND_INFRA, ProjectTypes.IOT]    
     },
     {
       title: "Fast food order app",
@@ -47,7 +47,7 @@ const Portfolio = () => {
       description: "An android app that allows users to place orders, by selecting menus and extras.",
       technologies: ["Android Studio","Jetpack compose","BLE","Coil"],
       githubLink: "https://github.com/Nathanb-ecam/android_restaurant_order.git",
-      categories:[ProjectTypes.MOBILE, ProjectTypes.WEB]
+      categories:[ProjectTypes.MOBILE]
     },
     {
       title: "IoT telemetry",
@@ -76,7 +76,7 @@ const Portfolio = () => {
   return (
     <div className='text-grey-text'>
       {filters.length > 0 && 
-      <ul className='flex gap-5 whitespace-nowrap overflow-scroll mb-5'>
+      <ul className='flex gap-5 whitespace-nowrap overflow-scroll py-1 mb-5'>
           {filters.map((filter, index)=>(
             <li 
             key={index} 

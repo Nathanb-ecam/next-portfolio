@@ -5,8 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, 
   },
-  basePath: '/next-portfolio', // replace with your GitHub repo name
-  assetPrefix: '/next-portfolio', 
+  basePath: '/next-portfolio', 
+  trailingSlash: true,  
+  // assetPrefix: '/next-portfolio', 
 };
 
 export default nextConfig;
